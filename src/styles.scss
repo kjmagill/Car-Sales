@@ -9,7 +9,8 @@ body {
   place-items: center;
 }
 .boxes {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-gap: 2em;
   grid-template-columns: repeat(2, minmax(350px, 1fr));
   grid-template-rows: auto;
@@ -17,7 +18,9 @@ body {
 .box {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  margin: 0 20px;
+  min-height: 350px;
+  min-width: 335px;
   h1 {
     font-size: 20px;
     margin: 0 0 1rem 0;
@@ -33,6 +36,9 @@ body {
       justify-content: flex-start;
     }
   }
+}
+.box2 {
+  max-height: 350px;
 }
 .button {
   background: hotpink;
